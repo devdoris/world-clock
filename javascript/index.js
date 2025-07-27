@@ -24,6 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Qatar
+  let qatarElement = document.querySelector("#qatar");
+  if (qatarElement) {
+    let qatarDateElement = qatarElement.querySelector(".date");
+    let qatarTimeElement = qatarElement.querySelector(".time");
+    let qatarTime = moment().tz("Asia/Qatar");
+
+    qatarDateElement.innerHTML = qatarTime.format("MMMM	Do YYYY");
+    qatarTimeElement.innerHTML = qatarTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
