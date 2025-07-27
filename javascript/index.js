@@ -44,6 +44,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+  <a href="/" style="text-decoration:none;">≪Refresh</a>
   `;
 }
 
